@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../style/font/proximanova_regular.ttf);
+}
+
 h1,
 h2,
 h3,
@@ -11,6 +16,7 @@ body {
     width: 1280px;
     margin: 0 auto;
     background-color: #162831;
+    font-family: 'Proxima Nova';
 }
 
 header {
@@ -45,6 +51,7 @@ main {
 #seance, #feetbac {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 100px;
 }
 
@@ -211,15 +218,9 @@ main {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color;
-   
-
-
-    
 }
 
 .about-item:nth-child(2) {
@@ -229,7 +230,61 @@ main {
 .about-content {
     width: 40%;
     color: white;
-    font: proxima nova;
-    
-
 }
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 134px;
+}
+
+.price img  {
+    width: 526px;
+    height: 396px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price ul {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.price li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price li::before {
+    content: url(../style/img/decore-blue.svg);
+    position: absolute;
+    left: -38px;
+    transform: scale(.8);
+}
+
+.price span {
+    font-weight: 700;
+}
+
+.price span::after {
+    content: "₽"; 
+}
+
+.price-picture {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 21px;
+    font-weight: 700px;
+    color: white;
+}
+
+
+
+
